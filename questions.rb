@@ -6,8 +6,8 @@ attr_reader :x, :y
     @y = rand(1...20)
   end
 
-  def make_question
-    "What does #{@x} plus #{@y} equal?"
+  def ask_question(current_player)
+    puts "#{current_player}: What does #{@x} plus #{@y} equal?"
   end
 
   def get_answer
